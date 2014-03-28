@@ -1,4 +1,15 @@
-(function(window,undefined){
+(function (root, factory) {
+
+	if (typeof exports === 'object') {
+		module.exports = factory();
+	}
+	else
+	{
+		root.JSTimezone = factory();
+	}
+
+
+}(this, function(){
 
 var timezone = (function(){
 
@@ -61,6 +72,6 @@ var timezone = (function(){
 	};
 })();
 
-window.JSTimezone = timezone;
+return timezone;
 
-})(window);
+}));
