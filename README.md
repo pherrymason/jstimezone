@@ -25,4 +25,3 @@ TODO
 ----
 
 - Include Timezone name.
-- AMD module.
